@@ -44,6 +44,7 @@ VOLUME /supervisor
 
 ADD supervisord.conf /etc/supervisor/supervisord.conf
 ADD consul-template.cfg /config/consul-template/000-consul-template.cfg
+ADD stop-supervisord.py /supervisor/stop-supervisord.py
 
 CMD [ \
     "dumb-init", \
